@@ -37,7 +37,7 @@ Note that the --csv_val argument is optional, in which case no validation will b
 
 ## Demo
 Red and blue boxes represent pedestrian and bikers, respectively.
-<p align="center"><img src="exp/demo.gif" alt="ENAS_rnn" width="30%">></p> 
+<p align="center"><img src="exp/demo.gif" alt="ENAS_rnn" width="30%"></p> 
 
 ```bash
 python demo.py --dataset csv --csv_classes snapshots/labels.csv --csv_test snapshots/test_annotations.csv --model trained_data/model_final.pt
