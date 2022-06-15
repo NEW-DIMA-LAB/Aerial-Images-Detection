@@ -1,0 +1,28 @@
+Retina - pytorch 실행 명령어
+
+**train**
+python train.py --dataset csv --csv_train snapshots/train_annotations.csv --csv_classes snapshots/labels.csv --csv_val snapshots/val_annotations.csv
+
+**eval**
+python demo.py --dataset csv --csv_classes snapshots/labels.csv --csv_test snapshots/test_annotations.csv --model trained_data/model_final.pt
+
+
+동영상 하나당 8분정도
+
+train data set 총 2612 ( 사람 많은 데이터셋 )
+40 프레임 단위로 끊어서
+	bookstore     -  0, 1, 3 
+	coupa           -  1, 2, 3
+ 	deathCircle    -  0, 2, 	
+	gates            -  3, 4, 5
+	hyang           - 5, 6, 7
+	little              - 0, 1
+	quad             - 1
+
+val data set 총 665 ( train 과 겹치는 않음 , 사람 많은 데이터셋  )
+	bookstore      - 1
+	coupa           - 3
+	deathCircle    - 4
+	gate              - 5
+	little              - 1
+	quad             - 2 
